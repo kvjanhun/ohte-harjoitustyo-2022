@@ -32,4 +32,3 @@ class TestMaksukortti(unittest.TestCase):
 
     def test_saldo_tulostuu_merkkijonona_oikein(self):
         self.assertEqual(str(self.maksukortti), f"saldo: 10.0")
-        
