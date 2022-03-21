@@ -25,4 +25,3 @@ class Maksukortti:
 
     def __str__(self):
         return f"Kortilla on rahaa {self.arvo} euroa"
-

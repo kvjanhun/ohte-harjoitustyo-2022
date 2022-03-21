@@ -19,8 +19,13 @@ class TestMaksukortti(unittest.TestCase):
     def test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi(self):
         self.kortti.syo_maukkaasti()
         self.kortti.syo_maukkaasti()
-        # nyt kortin saldo on 2
         self.kortti.syo_edullisesti()
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 2 euroa")
+
+    def test_syo_maukkaasti_ei_vie_saldoa_negatiiviseksi(self):
+        self.kortti.syo_maukkaasti()
+        self.kortti.syo_maukkaasti()
+        self.kortti.syo_maukkaasti()
         self.assertEqual(str(self.kortti), "Kortilla on rahaa 2 euroa")
 
     def test_kortille_voi_ladata_rahaa(self):
@@ -30,3 +35,21 @@ class TestMaksukortti(unittest.TestCase):
     def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
         self.kortti.lataa_rahaa(200)
         self.assertEqual(str(self.kortti), "Kortilla on rahaa 150 euroa")
+
+    def test_negatiivinen_lataus_ei_muuta_saldoa(self):
+        self.kortti.lataa_rahaa(-10)
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 10 euroa")
+
+    def test_edullisen_osto_onnistuu_tasasaldolla(self):
+        self.kortti.syo_edullisesti()
+        self.kortti.syo_edullisesti()
+        self.kortti.syo_edullisesti()
+        self.kortti.syo_edullisesti()
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 0.0 euroa")
+
+    def test_maukkaan_osto_onnistuu_tasasaldolla(self):
+        self.kortti.lataa_rahaa(2)
+        self.kortti.syo_maukkaasti()
+        self.kortti.syo_maukkaasti()
+        self.kortti.syo_maukkaasti()
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 0 euroa")
