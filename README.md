@@ -7,3 +7,6 @@ Tehtävät
 
 ### Viikko 2
 ![Coverage screenshot](/laskarit/viikko2/coverage.png)
+
+* [Vaatimusmäärittely](/documentation/specification.md)
+* [Työaikakirjanpito](/documentation/tuntikirjanpito.md)
