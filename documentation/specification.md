@@ -31,7 +31,7 @@ Game ends if either the SP or time runs out.
 
 Basic functionality
 ---
-* Player moves around the maze with `↑↓←→` keys, one cell at a time. 
+* Player moves around the maze with `↑→↓←` keys, one cell at a time. 
 * Game window's borders and walls can't be passed through. 
 * When colliding with a power-up or power-down item, the item disappears and the SP counter is increased or decreased by one, respectively.
 * If the SP counter reaches 0, game ends as a loss.
