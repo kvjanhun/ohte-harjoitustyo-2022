@@ -1,6 +1,6 @@
 Specification
 ===
-A real-time game where a player moves through a maze to reach the goal, choosing a beneficial route, before the timer runs out. At this point, a name and theme is yet to be decided, and the basic idea explained in a general manner.
+A real-time game where a player moves through a maze to reach the goal, choosing a beneficial route, before the timer runs out. At this point, a name and theme is yet to be decided, and the idea is presented in a general manner.
 
 UI draft
 ---
