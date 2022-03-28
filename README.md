@@ -1,4 +1,5 @@
-# Ohjelmistotekniikka
+Ohjelmistotekniikka
+===
 Tehtävät
 ---
 ### Viikko 1
@@ -8,5 +9,7 @@ Tehtävät
 ### Viikko 2
 ![Coverage screenshot](/laskarit/viikko2/coverage.png)
 
+Harjoitustyö
+---
 * [Vaatimusmäärittely](/documentation/specification.md)
 * [Työaikakirjanpito](/documentation/tuntikirjanpito.md)
